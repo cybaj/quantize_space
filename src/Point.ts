@@ -71,11 +71,8 @@ export class Point {
                 _yComplete = y + _yBackDiff
             }
 
-            qx = _xComplete / unitValue
-            qy = _yComplete / unitValue
-
-            qx = Number.parseFloat(qx.toFixed(unitResolution))
-            qy = Number.parseFloat(qy.toFixed(unitResolution))
+            qx = Number.parseFloat(_xComplete.toFixed(unitResolution))
+            qy = Number.parseFloat(_yComplete.toFixed(unitResolution))
         }
         return [qx, qy]
     }
